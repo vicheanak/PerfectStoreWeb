@@ -1,0 +1,20 @@
+<div ng-controller="loginCtrl as login" class="middle-box text-center loginscreen  animated fadeInDown">
+    <div>
+        <div>
+            <h1 class="logo-name">PS+</h1>
+        </div>
+        <h3>Perfect Store Unilever</h3>
+        <form class="m-t" role="form" action="#">
+            <div class="form-group">
+                <input type="email" ng-model="lg.email" class="form-control" placeholder="Email" required="">
+            </div>
+            <div class="form-group">
+                <input type="password" ng-model="lg.password" class="form-control" placeholder="Password" required="">
+            </div>
+            <button type="submit" ng-click="lg.login()" class="btn btn-primary block full-width m-b">Login</button>
+
+            <a ui-sref="forgot_password"><small>Forgot password?</small></a>
+        </form>
+        <p class="m-t"> <small>Unilever &copy; 2017</small> </p>
+    </div>
+</div>
